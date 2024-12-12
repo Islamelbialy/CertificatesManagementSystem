@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'certificates',
-    'Foundations'
+    'Foundations',
     'registeration',
     'widget_tweaks',
     'Programs'
