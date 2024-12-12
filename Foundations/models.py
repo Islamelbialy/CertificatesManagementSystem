@@ -7,8 +7,8 @@ class Foundation(models.Model):
     email = models.EmailField(max_length=255, null=False, blank=False)                           # Foundation's Email    
     logo1 = models.BinaryField(null=True, blank=True)                                            # Foundation's First Logo
     logo2 = models.BinaryField(null=True, blank=True)                                            # Foundation's Second Logo
-    #parent_id = models.ForeignKey('self',related_name='parent_id',on_delete=models.CASCADE)      # Foundation's ParentID
-
+    parent_id = models.ForeignKey('self',related_name='child_found',on_delete=models.CASCADE)      # Foundation's ParentID
+    #pathName&OldID&FoundationType
     def __str__(self):
         return self.name
 
